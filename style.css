@@ -1,0 +1,459 @@
+/* style.css */
+
+/* --- Root Variables (Color Palette & Typography) --- */
+:root {
+    --primary-color-dark: #2c3e50; /* Deep Charcoal / Navy Blue */
+    --primary-color-navy: #001f3f; /* Alternative Navy */
+    --canvas-color-white: #ffffff;
+    --accent-color-cyan: #00bcd4;   /* Vibrant Cyan */
+    --accent-color-electric-blue: #007bff; /* Electric Blue */
+    --text-color-light: #f8f9fa;
+    --text-color-dark: #343a40;
+    --text-color-medium: #5a6268;
+
+    --font-primary: 'Montserrat', sans-serif;
+
+    --container-width: 1200px;
+    --header-height: 80px;
+    --border-radius-main: 5px;
+}
+
+/* --- Global Resets & Base Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--text-color-dark);
+    background-color: var(--canvas-color-white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color-electric-blue);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color-cyan);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* --- Utility Classes --- */
+.section-padding {
+    padding: 80px 0;
+}
+.alt-background {
+    background-color: #f4f7f6; /* A very light grey for section differentiation */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--primary-color-dark);
+    margin-bottom: 20px;
+}
+
+.section-intro {
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--text-color-medium);
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+/* --- Header & Navigation --- */
+.site-header {
+    background-color: var(--primary-color-dark);
+    color: var(--text-color-light);
+    padding: 0 20px;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo a {
+    color: var(--canvas-color-white);
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.main-navigation ul {
+    display: flex;
+}
+
+.main-navigation .nav-item {
+    position: relative; /* For mega menu positioning */
+    margin-left: 25px;
+}
+
+.navigation-link {
+    color: var(--text-color-light);
+    font-weight: 500;
+    padding: 10px 5px;
+    display: block;
+}
+
+.navigation-link:hover,
+.nav-item.active .navigation-link {
+    color: var(--accent-color-cyan);
+}
+
+/* Mega Menu Styling */
+.mega-menu {
+    display: none; /* Hidden by default, shown by JS */
+    position: absolute;
+    left: 0;
+    top: 100%; /* Position below the nav item */
+    background-color: var(--primary-color-dark);
+    border-top: 3px solid var(--accent-color-cyan);
+    padding: 25px;
+    width: 600px; /* Adjust as needed, can be wider */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1001; /* Ensure it's above other content */
+    display: flex; /* For column layout */
+    gap: 20px; /* Space between columns */
+}
+
+.mega-menu-column {
+    flex: 1; /* Distribute space equally among columns */
+}
+
+.mega-menu-column h4 {
+    color: var(--canvas-color-white);
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    border-bottom: 1px solid var(--accent-color-electric-blue);
+    padding-bottom: 8px;
+}
+
+.mega-menu-column ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mega-menu-column ul li {
+    margin-bottom: 10px;
+}
+
+.mega-menu-column ul li a {
+    color: var(--text-color-light);
+    font-weight: normal; /* Override nav item link weight if needed */
+    font-size: 0.95em;
+    padding: 5px 0;
+}
+
+.mega-menu-column ul li a:hover {
+    color: var(--accent-color-cyan);
+    text-decoration: underline;
+}
+
+.mega-menu-column img {
+    border-radius: var(--border-radius-main);
+    margin-bottom: 10px;
+}
+
+.mega-menu-column p {
+    font-size: 0.9em;
+    color: var(--text-color-medium);
+}
+
+
+/* Remove hover effect for mega menu display, JS will handle it */
+/* .nav-item.has-megamenu:hover .mega-menu {
+    display: block; 
+} */
+
+/* --- Hero Section --- */
+.hero-section {
+    /* background-color: var(--primary-color-navy); Comment out or remove old background color */
+    background-image: url('../placeholder-images/hero-background.jpg'); /* Add your image path here */
+    background-size: cover; /* Cover the entire section */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat;
+    color: var(--text-color-light);
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--header-height); /* Offset for fixed header */
+}
+
+.hero-background-placeholder {
+    display: none; /* Hide the placeholder div if a background is set on .hero-section */
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    background-color: var(--accent-color-electric-blue);
+    color: var(--canvas-color-white);
+    padding: 15px 30px;
+    border-radius: var(--border-radius-main);
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-color-cyan);
+    color: var(--canvas-color-white);
+}
+
+.cta-button-secondary {
+    background-color: transparent;
+    color: var(--accent-color-electric-blue);
+    padding: 12px 25px;
+    border-radius: var(--border-radius-main);
+    font-weight: 600;
+    border: 2px solid var(--accent-color-electric-blue);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cta-button-secondary:hover {
+    background-color: var(--accent-color-electric-blue);
+    color: var(--canvas-color-white);
+}
+
+/* --- Harmonic Explanation Section --- */
+.harmonic-explanation-section .visualization-placeholder {
+    text-align: center;
+    padding: 30px;
+    background-color: #e9ecef; /* Light placeholder background */
+    border-radius: var(--border-radius-main);
+    margin-top: 40px;
+}
+
+.harmonic-explanation-section .visualization-placeholder p {
+    color: var(--text-color-medium);
+    font-style: italic;
+}
+
+/* --- Solutions Section --- */
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.solution-item {
+    background-color: var(--canvas-color-white);
+    padding: 30px;
+    border-radius: var(--border-radius-main);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solution-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.solution-item h3 {
+    color: var(--primary-color-dark);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.solution-item p {
+    color: var(--text-color-medium);
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    min-height: 60px; /* Ensure consistent height for paragraph block */
+}
+
+.solution-icon {
+    max-width: 60px; /* Adjust size as needed */
+    margin-bottom: 15px;
+}
+
+.learn-more-link {
+    font-weight: 600;
+    color: var(--accent-color-electric-blue);
+}
+
+/* --- Footer --- */
+.site-footer {
+    background-color: var(--primary-color-dark);
+    color: var(--text-color-medium);
+    text-align: center;
+    padding: 40px 20px;
+    /* margin-top: 50px; Removed to allow sections to flow naturally */
+}
+
+.site-footer p {
+    margin-bottom: 10px;
+}
+
+.site-footer a {
+    color: var(--text-color-light);
+}
+
+.site-footer a:hover {
+    color: var(--accent-color-cyan);
+}
+
+/* --- Certifications Section --- */
+.certifications-display {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Space between logos */
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.certifications-display img {
+    max-height: 80px; /* Adjust as needed */
+    max-width: 150px; /* Adjust as needed */
+    object-fit: contain;
+    filter: grayscale(100%); /* Optional: make them grayscale */
+    transition: filter 0.3s ease;
+}
+
+.certifications-display img:hover {
+    filter: grayscale(0%); /* Optional: color on hover */
+}
+
+/* Remove placeholder styling if it exists */
+.certifications-section .certifications-carousel-placeholder {
+    display: none; /* Hide the old placeholder */
+}
+
+/* --- Inner Page Specific Styles --- */
+.inner-page-content {
+    padding-top: var(--header-height); /* Account for fixed header */
+}
+
+.page-title-section {
+    background-color: var(--primary-color-navy); /* Or a lighter shade like #e9ecef */
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 40px 0; /* Reduced padding compared to hero */
+}
+
+.page-title-section h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+/* Optional: Breadcrumb Styling */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.breadcrumb-item a {
+    color: var(--accent-color-cyan);
+}
+
+.breadcrumb-item.active {
+    color: var(--text-color-light);
+}
+
+/* Main content section styles - Standard padding is already applied by .section-padding */
+/* Add any specific styles for the main content area of inner pages if needed */
+
+/* --- Product Page Specific Styles --- */
+.product-category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.product-category-item {
+    background-color: var(--canvas-color-white);
+    border-radius: var(--border-radius-main);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+    text-align: center;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.product-category-item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 180px; /* Control image height */
+    object-fit: cover; /* Or 'contain' depending on image aspect ratios */
+    border-radius: var(--border-radius-main);
+    margin-bottom: 20px;
+}
+
+.product-category-item h3 {
+    font-size: 1.6em;
+    color: var(--primary-color-dark);
+    margin-bottom: 10px;
+}
+
+.product-category-item p {
+    font-size: 0.95em;
+    color: var(--text-color-medium);
+    margin-bottom: 20px;
+    min-height: 50px; /* Adjust for consistent text block height */
+}
+
+/* Ensure .cta-button-secondary is suitable or add specific styles if needed */
+.product-category-item .cta-button-secondary {
+    display: inline-block; /* Ensure it takes padding correctly */
+    margin-top: 10px; /* Add some space above the button */
+}
