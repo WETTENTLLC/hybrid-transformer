@@ -3,141 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technology - Hybrid Transformers LLC</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Our Technology - Hybrid Transformers LLC</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script> <!-- Replace with your kit -->
 </head>
 <body>
-    <header class="site-header">
+    <header>
         <div class="container">
             <div class="logo">
-                <a href="index.html"><img src="images/logo_placeholder.png" alt="Hybrid Transformers LLC Logo"></a>
+                <a href="index.html"><img src="images/logo-placeholder.png" alt="Hybrid Transformers LLC Logo"></a>
             </div>
-            <nav class="main-navigation">
-                <ul>
+            <nav>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <ul id="primary-navigation" class="nav-list" data-visible="false">
                     <li><a href="index.html">Home</a></li>
-                    <li class="dropdown nav-item has-megamenu">
-                        <a href="products.html" aria-haspopup="true" aria-expanded="false">Products</a>
-                        <div class="mega-menu" aria-labelledby="products-menu-button">
+                    <li class="has-megamenu">
+                        <a href="products.html">Products</a>
+                        <div class="mega-menu">
                             <div class="mega-menu-column">
-                                <h3><a href="products.html#category1">Power Transformers</a></h3>
+                                <h4>Core Products</h4>
                                 <ul>
-                                    <li><a href="product-detail-template.html?product=ptr1000">PTR1000 Series</a></li>
-                                    <li><a href="product-detail-template.html?product=ptr2000">PTR2000 Series</a></li>
+                                    <li><a href="product-hybrid.html">Hybrid Transformers</a></li>
+                                    <li><a href="product-high-efficiency.html">High-Efficiency Transformers</a></li>
+                                    <li><a href="product-pad-mounted.html">Pad-Mounted Transformers</a></li>
                                 </ul>
                             </div>
                             <div class="mega-menu-column">
-                                <h3><a href="products.html#category2">Distribution Transformers</a></h3>
+                                <h4>Specialized Products</h4>
                                 <ul>
-                                    <li><a href="product-detail-template.html?product=dtr500">DTR500 Series</a></li>
-                                    <li><a href="product-detail-template.html?product=dtr750">DTR750 Series</a></li>
+                                    <li><a href="product-oil-immersed.html">Oil-Immersed Transformers</a></li>
+                                    <li><a href="product-dry-type.html">Dry-Type Transformers</a></li>
+                                    <li><a href="product-earthquake-resistant.html">Earthquake-Resistant Transformers</a></li>
                                 </ul>
                             </div>
                             <div class="mega-menu-column">
-                                <h3><a href="products.html#category3">Specialty Transformers</a></h3>
+                                <h4>By Application</h4>
                                 <ul>
-                                    <li><a href="product-detail-template.html?product=str300">STR300 Custom Solutions</a></li>
+                                    <li><a href="solution-ai-data-centers.html">AI & Data Centers</a></li>
+                                    <li><a href="solution-renewable-energy.html">Renewable Energy</a></li>
+                                    <li><a href="solution-ev-charging.html">EV Charging</a></li>
                                 </ul>
                             </div>
                         </div>
                     </li>
-                    <li><a href="solutions-detail-template.html">Solutions</a></li>
+                    <li class="has-megamenu">
+                        <a href="solutions.html">Solutions</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-column">
+                                <h4>Industry Solutions</h4>
+                                <ul>
+                                    <li><a href="solution-ai-data-centers.html">AI & Data Centers</a></li>
+                                    <li><a href="solution-renewable-energy.html">Renewable Energy/Solar</a></li>
+                                    <li><a href="solution-ev-charging.html">EV Charging Infrastructure</a></li>
+                                    <li><a href="solution-industrial-utility.html">Industrial & Utility</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Custom Solutions</h4>
+                                <ul>
+                                    <li><a href="solutions-custom.html">Custom Engineering</a></li>
+                                    <li><a href="solutions-integration.html">System Integration</a></li>
+                                    <li><a href="solutions-consulting.html">Consulting Services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="technology.html">Technology</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li class="has-megamenu">
+                        <a href="resources.html">Resources</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-column">
+                                <h4>Knowledge Base</h4>
+                                <ul>
+                                    <li><a href="resources-tech-docs.html">Technical Documentation</a></li>
+                                    <li><a href="resources-whitepapers.html">Whitepapers & Articles</a></li>
+                                    <li><a href="resources-case-studies.html">Case Studies</a></li>
+                                    <li><a href="resources-glossary.html">Glossary</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Support</h4>
+                                <ul>
+                                    <li><a href="resources-faq.html">FAQ</a></li>
+                                    <li><a href="resources-support-contact.html">Support Contact</a></li>
+                                    <li><a href="resources-downloads.html">Downloads</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has-megamenu">
+                        <a href="about.html">About Us</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-column">
+                                <h4>Our Company</h4>
+                                <ul>
+                                    <li><a href="about-story-mission.html">Our Story & Mission</a></li>
+                                    <li><a href="about-team.html">Leadership Team</a></li>
+                                    <li><a href="about-manufacturing.html">Manufacturing Excellence</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Values & Commitments</h4>
+                                <ul>
+                                    <li><a href="about-sustainability.html">Sustainability & ESG</a></li>
+                                    <li><a href="about-certifications.html">Certifications & Compliance</a></li>
+                                    <li><a href="about-news.html">News & Events</a></li>
+                                    <li><a href="about-careers.html">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-contact">
-                <p>Call Us: +1-800-555-HYBRID</p>
-            </div>
         </div>
     </header>
 
-    <main class="inner-page-content">
-        <section class="page-title-section section-padding">
+    <main>
+        <section class="breadcrumb-section">
             <div class="container">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Technology</li>
-                    </ol>
-                </nav>
-                <h1>Our Technology</h1>
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Technology</li>
+                </ul>
             </div>
         </section>
 
-        <section class="main-content-section section-padding alt-background">
+        <section class="page-hero technology-hero">
             <div class="container">
-                <h2>Innovations in Transformer Technology</h2>
-                <p>At Hybrid Transformers LLC, we are at the forefront of transformer technology. Our research and development efforts focus on creating solutions that are not only efficient and reliable but also environmentally conscious and future-ready. Explore the core technologies that power our advanced transformer designs.</p>
-                
-                <article class="technology-feature">
-                    <h3>Advanced Core Materials</h3>
-                    <p>We utilize cutting-edge amorphous and nanocrystalline core materials that significantly reduce no-load losses, leading to substantial energy savings over the transformer's lifespan. Learn about how these materials contribute to higher efficiency and a smaller carbon footprint.</p>
-                    <!-- Placeholder for an image or diagram -->
-                    <div class="visual-placeholder" style="height: 200px; background-color: #e0e0e0; margin: 15px 0; display:flex; align-items:center; justify-content:center;">Placeholder: Diagram of Core Material Benefits</div>
-                </article>
-
-                <article class="technology-feature">
-                    <h3>Smart Cooling Systems</h3>
-                    <p>Our transformers incorporate intelligent cooling systems that adapt to load conditions and ambient temperatures. This ensures optimal performance, extends the lifespan of the transformer, and minimizes energy consumption for cooling.</p>
-                     <!-- Placeholder for an image or diagram -->
-                    <div class="visual-placeholder" style="height: 200px; background-color: #e0e0e0; margin: 15px 0; display:flex; align-items:center; justify-content:center;">Placeholder: Smart Cooling System Animation/Graphic</div>
-                </article>
-
-                <article class="technology-feature">
-                    <h3>Integrated Monitoring & Diagnostics</h3>
-                    <p>Many of our transformer series come equipped with state-of-the-art monitoring systems. These systems provide real-time data on key performance indicators, enabling predictive maintenance and reducing the risk of unexpected downtime. Discover how our IoT-enabled transformers offer enhanced reliability.</p>
-                     <!-- Placeholder for an image or diagram -->
-                    <div class="visual-placeholder" style="height: 200px; background-color: #e0e0e0; margin: 15px 0; display:flex; align-items:center; justify-content:center;">Placeholder: Monitoring Dashboard Mockup</div>
-                </article>
-
-                <article class="technology-feature">
-                    <h3>Eco-Friendly Dielectric Fluids</h3>
-                    <p>We are committed to sustainability. Our liquid-filled transformers can be specified with biodegradable and high-fire-point ester fluids, offering an environmentally friendly and safer alternative to traditional mineral oil.</p>
-                     <!-- Placeholder for an image or diagram -->
-                    <div class="visual-placeholder" style="height: 200px; background-color: #e0e0e0; margin: 15px 0; display:flex; align-items:center; justify-content:center;">Placeholder: Eco-Fluid Benefits Graphic</div>
-                </article>
-
-                <p>More details about our research initiatives, patents, and technological partnerships will be featured here.</p>
+                <h1>Pioneering Transformer Technology</h1>
+                <p>At Hybrid Transformers LLC, we are at the forefront of innovation, developing and deploying advanced technologies that redefine power transformation for a smarter, more sustainable future.</p>
             </div>
         </section>
+
+        <section class="technology-showcase section-padding">
+            <div class="container">
+                <div class="technology-item">
+                    <div class="technology-content">
+                        <div class="technology-icon"><img src="images/icon-core-tech-placeholder.svg" alt="Core Technology Icon"></div>
+                        <h2>Core Transformer Technologies</h2>
+                        <p>Our transformers are built upon a foundation of cutting-edge materials and design principles. We leverage technologies like amorphous and nanocrystalline cores for superior efficiency and performance, alongside advanced winding techniques and insulation systems for enhanced reliability and lifespan. Techniques such as Sweep Frequency Response Analysis (SFRA) are integral to our quality assurance.</p>
+                        <ul>
+                            <li>Amorphous Metal Cores: Significantly reducing no-load losses.</li>
+                            <li>Nanocrystalline Ribbon Cores: For high-frequency applications and compact designs.</li>
+                            <li>Advanced Winding and Insulation: Ensuring durability under extreme conditions.</li>
+                            <li>SFRA Diagnostics: Verifying mechanical and electrical integrity.</li>
+                        </ul>
+                    </div>
+                    <div class="technology-visual">
+                        <img src="images/tech-core-placeholder.jpg" alt="Diagram of Core Transformer Technology">
+                        <p class="caption">Conceptual illustration of advanced core materials.</p>
+                    </div>
+                </div>
+
+                <div class="technology-item alt-layout">
+                    <div class="technology-content">
+                        <div class="technology-icon"><img src="images/icon-smart-grid-placeholder.svg" alt="Smart Grid Icon"></div>
+                        <h2>Smart Grid Integration</h2>
+                        <p>We engineer transformers that are ready for the demands of the modern smart grid. Our solutions incorporate IoT connectivity for real-time monitoring of critical parameters, enabling predictive maintenance, optimized load management, and seamless integration with distributed energy resources (DERs) and grid automation systems.</p>
+                        <ul>
+                            <li>IoT-Enabled Sensors: For voltage, current, temperature, and oil quality monitoring.</li>
+                            <li>Predictive Analytics: Leveraging data for proactive maintenance scheduling.</li>
+                            <li>SCADA Compatibility: Ensuring interoperability with existing grid infrastructure.</li>
+                            <li>Enhanced Grid Stability: Supporting bi-directional power flow and voltage regulation.</li>
+                        </ul>
+                    </div>
+                    <div class="technology-visual">
+                        <img src="images/tech-smart-grid-placeholder.jpg" alt="Smart Grid Integration Diagram">
+                        <p class="caption">Visualization of a transformer connected within a smart grid ecosystem.</p>
+                    </div>
+                </div>
+
+                <div class="technology-item">
+                    <div class="technology-content">
+                        <div class="technology-icon"><img src="images/icon-sustainable-placeholder.svg" alt="Sustainability Icon"></div>
+                        <h2>Sustainable & Eco-Friendly Design</h2>
+                        <p>Sustainability is a core tenet of our technological development. We prioritize the use of biodegradable dielectric fluids, design for reduced material usage and recyclability, and focus on minimizing environmental footprint through high-efficiency designs that lower energy consumption and greenhouse gas emissions throughout the transformer's lifecycle.</p>
+                        <ul>
+                            <li>Ester-based Biodegradable Oils: Offering superior fire safety and environmental protection.</li>
+                            <li>Low-Loss Designs: Exceeding efficiency standards to reduce operational carbon footprint.</li>
+                            <li>Recyclable Materials: Designing for end-of-life disassembly and material recovery.</li>
+                            <li>Noise Reduction Technologies: Minimizing acoustic impact in sensitive environments.</li>
+                        </ul>
+                    </div>
+                    <div class="technology-visual">
+                        <img src="images/tech-sustainable-placeholder.jpg" alt="Eco-Friendly Transformer Components">
+                        <p class="caption">Showcase of sustainable materials used in our transformers.</p>
+                    </div>
+                </div>
+
+                <div class="technology-item alt-layout">
+                    <div class="technology-content">
+                        <div class="technology-icon"><img src="images/icon-manufacturing-placeholder.svg" alt="Advanced Manufacturing Icon"></div>
+                        <h2>Advanced Manufacturing Processes</h2>
+                        <p>Our state-of-the-art manufacturing facilities employ robotic automation for precision tasks, advanced quality control systems including in-line testing and thermal imaging, and lean manufacturing principles to ensure the highest standards of quality, consistency, and efficiency in every transformer we produce.</p>
+                        <ul>
+                            <li>Robotic Winding & Assembly: For unparalleled precision and consistency.</li>
+                            <li>Automated Testing Suites: Comprehensive electrical and mechanical testing.</li>
+                            <li>ISO Certified Processes: Adherence to global quality management standards.</li>
+                            <li>Continuous Improvement Culture: Driving innovation in manufacturing techniques.</li>
+                        </ul>
+                    </div>
+                    <div class="technology-visual">
+                        <img src="images/tech-manufacturing-placeholder.jpg" alt="Advanced Manufacturing Facility">
+                        <p class="caption">Glimpse into our automated manufacturing line.</p>
+                    </div>
+                </div>
+
+                <div class="technology-item">
+                     <div class="technology-content">
+                        <div class="technology-icon"><img src="images/icon-rnd-placeholder.svg" alt="R&D Icon"></div>
+                        <h2>R&D and Future Innovations</h2>
+                        <p>Innovation is continuous at Hybrid Transformers LLC. Our dedicated R&D team is exploring next-generation materials like superconductors, AI-driven design optimization, solid-state transformer technologies, and advanced thermal management solutions to push the boundaries of transformer performance, reliability, and intelligence.</p>
+                        <ul>
+                            <li>Next-Generation Dielectric Materials: Research into higher performance and eco-friendly options.</li>
+                            <li>AI in Transformer Design: Utilizing machine learning for optimized configurations.</li>
+                            <li>Solid-State Transformer (SST) Development: Exploring the future of power conversion.</li>
+                            <li>Advanced Thermal Management: Innovative cooling solutions for compact and high-power units.</li>
+                        </ul>
+                    </div>
+                    <div class="technology-visual">
+                        <img src="images/tech-rnd-placeholder.jpg" alt="Future Technology Concept">
+                        <p class="caption">Conceptual art of future transformer technology.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section section-padding alt-background">
+            <div class="container text-center">
+                <h2>Explore Our Innovative Products</h2>
+                <p>See how our advanced technologies are integrated into our product lines.</p>
+                <a href="products.html" class="btn btn-primary">View Products</a>
+                <a href="contact.html" class="btn btn-secondary">Request a Consultation</a>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="site-footer">
+    <footer>
         <div class="container">
             <div class="footer-columns">
                 <div class="footer-column">
-                    <h3>Hybrid Transformers LLC</h3>
-                    <p>Innovating the future of energy.</p>
+                    <h4>Hybrid Transformers LLC</h4>
+                    <p>Leading the charge in advanced transformer technology. We power the future, sustainably and reliably.</p>
                     <p>&copy; <span id="currentYear"></span> Hybrid Transformers LLC. All Rights Reserved.</p>
                 </div>
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h4>Quick Links</h4>
                     <ul>
                         <li><a href="products.html">Products</a></li>
-                        <li><a href="solutions-detail-template.html">Solutions</a></li> 
+                        <li><a href="solutions.html">Solutions</a></li>
                         <li><a href="technology.html">Technology</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="about-story-mission.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="resources-faq.html">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <p>123 Innovation Drive, Tech City, TX 75001</p>
-                    <p>Email: info@hybridtransformers.com</p>
-                    <p>Phone: +1-800-555-HYBRID</p>
+                    <h4>Contact Us</h4>
+                    <p>123 Innovation Drive<br>Tech Park, CA 90210, USA</p>
+                    <p>Email: <a href="mailto:info@hybridtransformers.com">info@hybridtransformers.com</a></p>
+                    <p>Phone: <a href="tel:+18005550199">+1 (800) 555-0199</a></p>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect With Us</h4>
+                    <div class="social-media-links-footer">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <a href="privacy-policy.html" class="footer-privacy">Privacy Policy</a> | 
+                    <a href="terms-of-service.html" class="footer-terms">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // Set current year in footer
+        const currentYearElem = document.getElementById('currentYear');
+        if (currentYearElem) {
+            currentYearElem.textContent = new Date().getFullYear();
+        }
+    </script>
 </body>
 </html>

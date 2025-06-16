@@ -6,18 +6,18 @@
     <title>{{Product Name}} - Product Details - Hybrid Transformers LLC</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="site-header">
         <div class="container">
-            <div class="logo">
-                <a href="/">Hybrid Transformers LLC</a>
-            </div>
+            <a href="/" class="logo-link">
+                <img src="images/hybrid-transformer-logo-neon-glow.png" alt="Hybrid Transformers LLC Logo" id="site-logo">
+            </a>
             <nav class="main-navigation">
                 <ul>
-                    <li class="nav-item has-megamenu">
+                    <li class="nav-item has-megamenu dropdown">
                         <a href="products.html">Products</a>
                         <div class="mega-menu">
                             <div class="mega-menu-column">
@@ -45,35 +45,71 @@
                                 </ul>
                             </div>
                             <div class="mega-menu-column">
-                                <img src="placeholder-images/megamenu-product-feature.jpg" alt="Featured Product" style="max-width: 100%;">
-                                <p>Explore our cutting-edge solutions.</p>
+                                <img src="images/megamenu-placeholder.webp" alt="Featured Product" style="max-width: 100%; border-radius: 4px;">
+                                <p>Explore our cutting-edge transformer solutions.</p>
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item has-megamenu">
-                        <a href="#solutions">Solutions</a>
+                    <li class="nav-item has-megamenu dropdown">
+                        <a href="solutions-overview.html">Solutions</a>
                         <div class="mega-menu">
-                            <p>For AI Data Centers, Renewable Energy, EV Charging...</p>
+                            <div class="mega-menu-column">
+                                <h4>By Industry</h4>
+                                <ul>
+                                    <li><a href="solutions-detail-template.html?solution=data-centers">AI Data Centers</a></li>
+                                    <li><a href="solutions-detail-template.html?solution=renewable-energy">Renewable Energy</a></li>
+                                    <li><a href="solutions-detail-template.html?solution=industrial">Industrial Applications</a></li>
+                                    <li><a href="solutions-detail-template.html?solution=commercial">Commercial Buildings</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>By Challenge</h4>
+                                <ul>
+                                    <li><a href="solutions-detail-template.html?solution=energy-efficiency">Energy Efficiency</a></li>
+                                    <li><a href="solutions-detail-template.html?solution=power-quality">Power Quality</a></li>
+                                    <li><a href="solutions-detail-template.html?solution=grid-modernization">Grid Modernization</a></li>
+                                    <li><a href="solutions-detail-template.html?solution=custom-engineering">Custom Engineering</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a href="technology.html">Technology</a>
-                    </li>
-                    <li class="nav-item has-megamenu">
+                    <li class="nav-item"><a href="technology.html">Technology</a></li>
+                    <li class="nav-item has-megamenu dropdown">
                         <a href="resources.html">Resources</a>
                         <div class="mega-menu">
-                             <p>Technical Docs, Whitepapers, Case Studies...</p>
+                            <div class="mega-menu-column">
+                                <h4>Documentation</h4>
+                                <ul>
+                                    <li><a href="#">Technical Specifications</a></li>
+                                    <li><a href="#">Installation Guides</a></li>
+                                    <li><a href="#">Brochures</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Learn More</h4>
+                                <ul>
+                                    <li><a href="#">Whitepapers</a></li>
+                                    <li><a href="#">Case Studies</a></li>
+                                    <li><a href="#">Blog/Articles</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li class="nav-item has-megamenu">
+                    <li class="nav-item has-megamenu dropdown">
                         <a href="about.html">About Us</a>
                         <div class="mega-menu">
-                            <p>Our Story, Certifications, Manufacturing...</p>
+                            <div class="mega-menu-column">
+                                <ul>
+                                    <li><a href="about.html#our-story">Our Story</a></li>
+                                    <li><a href="about.html#mission-vision">Mission & Vision</a></li>
+                                    <li><a href="about.html#certifications">Certifications & Compliance</a></li>
+                                    <li><a href="about.html#careers">Careers</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a href="contact.html">Contact</a>
-                    </li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -95,104 +131,143 @@
 
         <section class="product-main-info section-padding alt-background">
             <div class="container product-layout-grid">
-                <div class="product-gallery">
-                    <!-- Placeholder for High-Quality 3D Renders / Images -->
+                <div class="product-gallery scroll-animate">
                     <div class="main-product-image">
-                        <img src="placeholder-images/product-render-large.jpg" alt="{{Product Name}} - Main View" id="mainProductImage">
+                        <img src="images/product-placeholder-large.webp" alt="{{Product Name}} - Main View" id="mainProductImage">
                     </div>
-                    <div class="thumbnail-images">
-                        <img src="placeholder-images/product-thumb1.jpg" alt="{{Product Name}} - Thumbnail 1" class="thumbnail-img active-thumb">
-                        <img src="placeholder-images/product-thumb2.jpg" alt="{{Product Name}} - Thumbnail 2" class="thumbnail-img">
-                        <img src="placeholder-images/product-thumb3.jpg" alt="{{Product Name}} - Thumbnail 3" class="thumbnail-img">
-                        <!-- Add more thumbnails as needed -->
+                    <div class="product-thumbnails">
+                        <img src="images/product-placeholder-thumb1.webp" alt="{{Product Name}} - Thumbnail 1" class="thumbnail-image active-thumbnail" data-image="images/product-placeholder-large.webp">
+                        <img src="images/product-placeholder-thumb2.webp" alt="{{Product Name}} - Thumbnail 2" class="thumbnail-image" data-image="images/product-placeholder-thumb2-large.webp">
+                        <img src="images/product-placeholder-thumb3.webp" alt="{{Product Name}} - Thumbnail 3" class="thumbnail-image" data-image="images/product-placeholder-thumb3-large.webp">
+                        <img src="images/product-placeholder-thumb4.webp" alt="{{Product Name}} - Thumbnail 4" class="thumbnail-image" data-image="images/product-placeholder-thumb4-large.webp">
                     </div>
-                    <p class="text-center muted-text">[Placeholder for Interactive 3D Model Viewer]</p>
                 </div>
 
-                <div class="product-summary">
+                <div class="product-summary scroll-animate">
                     <h2>Overview</h2>
-                    <p>{{Product Overview Text: A concise summary of the product, its primary application, and key benefits.}}</p>
+                    <p class="product-short-description">This is a brief, engaging overview of the {{Product Name}}. It highlights the core value proposition and its suitability for key applications. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     
-                    <h3>Key Features & Benefits</h3>
-                    <ul>
-                        <li>{{Feature 1: e.g., Patented Harmonic Cancellation}}</li>
-                        <li>{{Feature 2: e.g., Ultra-High Efficiency up to 99.X%}}</li>
-                        <li>{{Feature 3: e.g., Compact Footprint}}</li>
-                        <li>{{Benefit 1: e.g., Extended Equipment Lifespan}}</li>
-                        <li>{{Benefit 2: e.g., Reduced Energy Costs}}</li>
-                        <!-- Add more features/benefits -->
+                    <h3>Key Benefits:</h3>
+                    <ul class="product-benefits-list">
+                        <li>Benefit 1: Ultra-high efficiency and energy savings.</li>
+                        <li>Benefit 2: Advanced cooling technology for extended lifespan.</li>
+                        <li>Benefit 3: Smart monitoring capabilities for predictive maintenance.</li>
+                        <li>Benefit 4: Robust construction for harsh environments.</li>
                     </ul>
-                    <div class="product-cta-buttons">
-                        <a href="#configurator" class="cta-button">Configure This Product</a>
-                        <a href="#contact" class="cta-button-secondary">Request a Quote</a>
-                    </div>
+
+                    <a href="contact.html?subject=Quote Request: {{Product Name}}" class="cta-button product-cta">Request a Quote</a>
                 </div>
             </div>
         </section>
 
-        <section class="product-specifications section-padding">
+        <section class="product-detailed-info section-padding">
             <div class="container">
-                <h2 class="section-title">Technical Specifications</h2>
-                <div class="specification-table-placeholder">
-                    <p class="text-center">[Placeholder for Interactive Specification Table - See Task 3.5]</p>
-                    <!-- Basic HTML table structure as a fallback -->
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Specification</th>
-                                <th>Value</th>
-                                <th>Notes</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Model Number</td>
-                                <td>{{ModelNo}}</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>kVA Rating</td>
-                                <td>{{kVA_Rating}}</td>
-                                <td>Multiple options available</td>
-                            </tr>
-                            <tr>
-                                <td>Primary Voltage</td>
-                                <td>{{PrimaryVoltage}}</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>Secondary Voltage</td>
-                                <td>{{SecondaryVoltage}}</td>
-                                <td>-</td>
-                            </tr>
-                            <!-- Add more rows as needed -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
+                <div class="tabs-container scroll-animate">
+                    <div class="tab-buttons">
+                        <button class="tab-button active" data-tab="features">Features</button>
+                        <button class="tab-button" data-tab="specifications">Specifications</button>
+                        <button class="tab-button" data-tab="applications">Applications</button>
+                        <button class="tab-button" data-tab="downloads">Downloads</button>
+                    </div>
 
-        <section class="product-downloads section-padding alt-background">
-            <div class="container">
-                <h2 class="section-title">Downloadable Assets</h2>
-                <div class="downloads-grid">
-                    <div class="download-item">
-                        <img src="placeholder-images/icon-pdf.svg" alt="PDF Icon" class="download-icon">
-                        <h4>{{Product Name}} Datasheet</h4>
-                        <p>Detailed technical specifications and performance data.</p>
-                        <a href="downloads/{{ProductName}}-datasheet.pdf" class="cta-button-secondary" download>Download Datasheet (PDF)</a>
+                    <div id="features" class="tab-content active">
+                        <h3>In-Depth Features</h3>
+                        <p>Detailed explanation of Feature A, its technological advantages, and how it benefits the user. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                        <p>Elaboration on Feature B, including any innovative aspects. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus.</p>
+                        <ul class="detailed-features-list">
+                            <li>Advanced magnetic core materials for reduced losses.</li>
+                            <li>Proprietary winding techniques for superior performance.</li>
+                            <li>Integrated thermal management system.</li>
+                            <li>Modular design for easy customization and maintenance.</li>
+                            <li>Compliance with latest industry standards (e.g., DOE 2016, IEC).</li>
+                        </ul>
                     </div>
-                    <div class="download-item">
-                        <img src="placeholder-images/icon-cad.svg" alt="CAD Icon" class="download-icon">
-                        <h4>CAD Models (STEP/DWG)</h4>
-                        <p>Integrate our transformer into your designs with ease.</p>
-                        <a href="downloads/{{ProductName}}-cad-models.zip" class="cta-button-secondary" download>Download CAD Files (ZIP)</a>
+
+                    <div id="specifications" class="tab-content">
+                        <h3>Technical Specifications</h3>
+                        <table class="specifications-table">
+                            <thead>
+                                <tr>
+                                    <th>Specification</th>
+                                    <th>Detail</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Model Series</td>
+                                    <td>{{Model Series Placeholder}}</td>
+                                </tr>
+                                <tr>
+                                    <td>kVA Rating</td>
+                                    <td>{{kVA Rating Placeholder}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Primary Voltage</td>
+                                    <td>{{Primary Voltage Placeholder}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Secondary Voltage</td>
+                                    <td>{{Secondary Voltage Placeholder}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Frequency</td>
+                                    <td>50/60 Hz</td>
+                                </tr>
+                                <tr>
+                                    <td>Efficiency</td>
+                                    <td>Up to 99.x% (Meets/Exceeds DOE 2016)</td>
+                                </tr>
+                                <tr>
+                                    <td>Cooling Type</td>
+                                    <td>{{Cooling Type Placeholder (e.g., AN/AF, KNAN/KNAF)}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Winding Material</td>
+                                    <td>Copper / Aluminum (as specified)</td>
+                                </tr>
+                                <tr>
+                                    <td>Impedance</td>
+                                    <td>{{Impedance Placeholder}}%</td>
+                                </tr>
+                                <tr>
+                                    <td>Dimensions (L x W x H)</td>
+                                    <td>{{Dimensions Placeholder}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Weight</td>
+                                    <td>{{Weight Placeholder}}</td>
+                                </tr>
+                                 <tr>
+                                    <td>Certifications</td>
+                                    <td>UL Listed, CSA Certified, ISO 9001</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="download-item">
-                        <img src="placeholder-images/icon-manual.svg" alt="Manual Icon" class="download-icon">
-                        <h4>Installation & User Manual</h4>
-                        <p>Comprehensive guide for setup and operation.</p>
-                        <a href="downloads/{{ProductName}}-manual.pdf" class="cta-button-secondary" download>Download Manual (PDF)</a>
+
+                    <div id="applications" class="tab-content">
+                        <h3>Typical Applications</h3>
+                        <p>The {{Product Name}} is ideally suited for a wide range of demanding applications, including but not limited to:</p>
+                        <ul class="application-list">
+                            <li>AI Data Centers and High-Performance Computing</li>
+                            <li>Renewable Energy Integration (Solar, Wind)</li>
+                            <li>Electric Vehicle (EV) Charging Infrastructure</li>
+                            <li>Industrial Manufacturing Facilities</li>
+                            <li>Commercial Buildings and Campuses</li>
+                            <li>Critical Infrastructure (Hospitals, Utilities)</li>
+                        </ul>
+                        <p>Discuss specific use cases or scenarios where this product excels. For example, its ability to handle non-linear loads in data centers or its resilience in renewable energy projects.</p>
+                    </div>
+
+                    <div id="downloads" class="tab-content">
+                        <h3>Resources & Downloads</h3>
+                        <ul class="product-downloads-list">
+                            <li><a href="#" download>Product Brochure - {{Product Name}} (PDF)</a></li>
+                            <li><a href="#" download>Technical Datasheet - {{Product Name}} (PDF)</a></li>
+                            <li><a href="#" download>Installation & Maintenance Manual (PDF)</a></li>
+                            <li><a href="#" download>CAD Drawings (ZIP/DWG)</a></li>
+                            <li><a href="#" download>Warranty Information (PDF)</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -202,24 +277,34 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; <span id="currentYear">2025</span> Hybrid Transformers LLC. All Rights Reserved.</p>
-            <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Hybrid Transformers LLC</h4>
+                    <p>Innovating the future of energy distribution with advanced transformer technology.</p>
+                    <p>&copy; <script>document.write(new Date().getFullYear());</script> Hybrid Transformers LLC. All Rights Reserved.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="solutions-overview.html">Solutions</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p>123 Tech Drive, Innovation City, TX 75001</p>
+                    <p>Email: <a href="mailto:info@hybridtransformers.com">info@hybridtransformers.com</a></p>
+                    <p>Phone: <a href="tel:+18005551234">+1 (800) 555-1234</a></p>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <script src="js/particleground.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        // Basic image gallery functionality (can be expanded)
-        const mainImage = document.getElementById('mainProductImage');
-        const thumbnails = document.querySelectorAll('.thumbnail-img');
-
-        thumbnails.forEach(thumb => {
-            thumb.addEventListener('click', function() {
-                mainImage.src = this.src.replace('-thumb', '-large'); // Assuming large images follow this pattern
-                thumbnails.forEach(t => t.classList.remove('active-thumb'));
-                this.classList.add('active-thumb');
-            });
-        });
-    </script>
 </body>
 </html>

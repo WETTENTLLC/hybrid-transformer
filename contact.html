@@ -4,157 +4,279 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Hybrid Transformers LLC</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script> <!-- Replace with your kit -->
 </head>
 <body>
-    <header class="site-header">
+    <header>
         <div class="container">
             <div class="logo">
-                <a href="index.html"><img src="images/logo_placeholder.png" alt="Hybrid Transformers LLC Logo"></a>
+                <a href="index.html"><img src="images/logo-placeholder.png" alt="Hybrid Transformers LLC Logo"></a>
             </div>
-            <nav class="main-navigation">
-                <ul>
+            <nav>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <ul id="primary-navigation" class="nav-list" data-visible="false">
                     <li><a href="index.html">Home</a></li>
-                    <li class="dropdown nav-item has-megamenu">
-                        <a href="products.html" aria-haspopup="true" aria-expanded="false">Products</a>
-                        <div class="mega-menu" aria-labelledby="products-menu-button">
+                    <li class="has-megamenu">
+                        <a href="products.html">Products</a>
+                        <div class="mega-menu">
                             <div class="mega-menu-column">
-                                <h3><a href="products.html#category1">Power Transformers</a></h3>
+                                <h4>Core Products</h4>
                                 <ul>
-                                    <li><a href="product-detail-template.html?product=ptr1000">PTR1000 Series</a></li>
-                                    <li><a href="product-detail-template.html?product=ptr2000">PTR2000 Series</a></li>
+                                    <li><a href="product-hybrid.html">Hybrid Transformers</a></li>
+                                    <li><a href="product-high-efficiency.html">High-Efficiency Transformers</a></li>
+                                    <li><a href="product-pad-mounted.html">Pad-Mounted Transformers</a></li>
                                 </ul>
                             </div>
                             <div class="mega-menu-column">
-                                <h3><a href="products.html#category2">Distribution Transformers</a></h3>
+                                <h4>Specialized Products</h4>
                                 <ul>
-                                    <li><a href="product-detail-template.html?product=dtr500">DTR500 Series</a></li>
-                                    <li><a href="product-detail-template.html?product=dtr750">DTR750 Series</a></li>
+                                    <li><a href="product-oil-immersed.html">Oil-Immersed Transformers</a></li>
+                                    <li><a href="product-dry-type.html">Dry-Type Transformers</a></li>
+                                    <li><a href="product-earthquake-resistant.html">Earthquake-Resistant Transformers</a></li>
                                 </ul>
                             </div>
                             <div class="mega-menu-column">
-                                <h3><a href="products.html#category3">Specialty Transformers</a></h3>
+                                <h4>By Application</h4>
                                 <ul>
-                                    <li><a href="product-detail-template.html?product=str300">STR300 Custom Solutions</a></li>
+                                    <li><a href="solution-ai-data-centers.html">AI & Data Centers</a></li>
+                                    <li><a href="solution-renewable-energy.html">Renewable Energy</a></li>
+                                    <li><a href="solution-ev-charging.html">EV Charging</a></li>
                                 </ul>
                             </div>
                         </div>
                     </li>
-                    <li><a href="solutions-detail-template.html">Solutions</a></li>
+                    <li class="has-megamenu">
+                        <a href="solutions.html">Solutions</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-column">
+                                <h4>Industry Solutions</h4>
+                                <ul>
+                                    <li><a href="solution-ai-data-centers.html">AI & Data Centers</a></li>
+                                    <li><a href="solution-renewable-energy.html">Renewable Energy/Solar</a></li>
+                                    <li><a href="solution-ev-charging.html">EV Charging Infrastructure</a></li>
+                                    <li><a href="solution-industrial-utility.html">Industrial & Utility</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Custom Solutions</h4>
+                                <ul>
+                                    <li><a href="solutions-custom.html">Custom Engineering</a></li>
+                                    <li><a href="solutions-integration.html">System Integration</a></li>
+                                    <li><a href="solutions-consulting.html">Consulting Services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="technology.html">Technology</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li class="has-megamenu">
+                        <a href="resources.html">Resources</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-column">
+                                <h4>Knowledge Base</h4>
+                                <ul>
+                                    <li><a href="resources-tech-docs.html">Technical Documentation</a></li>
+                                    <li><a href="resources-whitepapers.html">Whitepapers & Articles</a></li>
+                                    <li><a href="resources-case-studies.html">Case Studies</a></li>
+                                    <li><a href="resources-glossary.html">Glossary</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Support</h4>
+                                <ul>
+                                    <li><a href="resources-faq.html">FAQ</a></li>
+                                    <li><a href="resources-support-contact.html">Support Contact</a></li>
+                                    <li><a href="resources-downloads.html">Downloads</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has-megamenu">
+                        <a href="about.html">About Us</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-column">
+                                <h4>Our Company</h4>
+                                <ul>
+                                    <li><a href="about-story-mission.html">Our Story & Mission</a></li>
+                                    <li><a href="about-team.html">Leadership Team</a></li>
+                                    <li><a href="about-manufacturing.html">Manufacturing Excellence</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Values & Commitments</h4>
+                                <ul>
+                                    <li><a href="about-sustainability.html">Sustainability & ESG</a></li>
+                                    <li><a href="about-certifications.html">Certifications & Compliance</a></li>
+                                    <li><a href="about-news.html">News & Events</a></li>
+                                    <li><a href="about-careers.html">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-contact">
-                <p>Call Us: +1-800-555-HYBRID</p>
-            </div>
         </div>
     </header>
 
-    <main class="inner-page-content">
-        <section class="page-title-section section-padding">
+    <main>
+        <section class="breadcrumb-section">
             <div class="container">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
-                    </ol>
-                </nav>
-                <h1>Contact Us</h1>
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Contact Us</li>
+                </ul>
             </div>
         </section>
 
-        <section class="main-content-section section-padding alt-background">
+        <section class="contact-hero">
             <div class="container">
-                <div class="contact-layout">
-                    <div class="contact-form-container">
-                        <h2>Send Us a Message</h2>
-                        <p>Have a question or need a quote? Fill out the form below and we'll get back to you as soon as possible.</p>
-                        <form id="contactForm" class="contact-form">
-                            <div class="form-group">
-                                <label for="name">Full Name:</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address:</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number (Optional):</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-                            <div class="form-group">
-                                <label for="company">Company (Optional):</label>
-                                <input type="text" id="company" name="company">
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject:</label>
-                                <input type="text" id="subject" name="subject" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message:</label>
-                                <textarea id="message" name="message" rows="6" required></textarea>
-                            </div>
-                            <button type="submit" class="cta-button">Send Message</button>
-                        </form>
-                        <div id="formFeedback" style="margin-top: 15px;"></div>
+                <h1>Get in Touch</h1>
+                <p>We're here to answer your questions and explore solutions for your power needs. Reach out to us today.</p>
+            </div>
+        </section>
+
+        <section class="contact-form-section section-padding">
+            <div class="container contact-grid">
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company (Optional)</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Area of Interest (Optional)</label>
+                            <select id="interest" name="interest">
+                                <option value="">--Please choose an option--</option>
+                                <option value="sales">Sales Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="careers">Careers</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div id="form-status"></div>
+                </div>
+
+                <div class="contact-details-container">
+                    <h2>Contact Information</h2>
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Hybrid Transformers LLC</strong><br>
+                            123 Innovation Drive<br>
+                            Tech Park, CA 90210<br>
+                            USA
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <strong>Phone:</strong> <a href="tel:+1-800-555-0199">+1-800-555-0199</a><br>
+                            <strong>Fax:</strong> +1-800-555-0198 (Placeholder)
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Sales:</strong> <a href="mailto:sales@hybridtransformers.com">sales@hybridtransformers.com</a><br>
+                            <strong>Support:</strong> <a href="mailto:support@hybridtransformers.com">support@hybridtransformers.com</a><br>
+                            <strong>General:</strong> <a href="mailto:info@hybridtransformers.com">info@hybridtransformers.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Business Hours:</strong><br>
+                            Monday - Friday: 8:00 AM - 6:00 PM (PST)
+                        </div>
                     </div>
 
-                    <div class="contact-info-container">
-                        <h2>Our Contact Information</h2>
-                        <p><strong>Hybrid Transformers LLC</strong></p>
-                        <p>123 Innovation Drive,<br>Tech City, TX 75001, USA</p>
-                        
-                        <p><strong>Phone:</strong> <a href="tel:+18005554927">+1-800-555-HYBRID</a> (4927)</p>
-                        <p><strong>Sales Inquiries:</strong> <a href="mailto:sales@hybridtransformers.com">sales@hybridtransformers.com</a></p>
-                        <p><strong>General Support:</strong> <a href="mailto:support@hybridtransformers.com">support@hybridtransformers.com</a></p>
-                        <p><strong>Careers:</strong> <a href="mailto:careers@hybridtransformers.com">careers@hybridtransformers.com</a></p>
-
-                        <h3>Business Hours</h3>
-                        <p>Monday - Friday: 8:00 AM - 5:00 PM (CST)</p>
-                        <p>Saturday - Sunday: Closed</p>
-
-                        <!-- Placeholder for a small map -->
-                        <div class="map-placeholder" style="height: 200px; background-color: #e0e0e0; margin-top: 20px; display:flex; align-items:center; justify-content:center;">
-                           Placeholder: Embedded Map or Link to Map
-                        </div>
+                    <h3>Connect With Us</h3>
+                    <div class="social-media-links">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <!-- Add more as needed -->
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2>Our Location</h2>
+                <!-- Placeholder for Google Maps or other map embed -->
+                <div id="map-placeholder" style="width: 100%; height: 450px; background-color: #e0e0e0; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 8px; margin-top: 20px;">
+                    <p style="color: #555; font-size: 1.2em;">[Interactive Map Will Be Embedded Here]</p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="site-footer">
+    <footer>
         <div class="container">
             <div class="footer-columns">
                 <div class="footer-column">
-                    <h3>Hybrid Transformers LLC</h3>
-                    <p>Innovating the future of energy.</p>
+                    <h4>Hybrid Transformers LLC</h4>
+                    <p>Leading the charge in advanced transformer technology. We power the future, sustainably and reliably.</p>
                     <p>&copy; <span id="currentYear"></span> Hybrid Transformers LLC. All Rights Reserved.</p>
                 </div>
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h4>Quick Links</h4>
                     <ul>
                         <li><a href="products.html">Products</a></li>
-                        <li><a href="solutions-detail-template.html">Solutions</a></li> 
+                        <li><a href="solutions.html">Solutions</a></li>
                         <li><a href="technology.html">Technology</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="about-story-mission.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="resources-faq.html">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <p>123 Innovation Drive, Tech City, TX 75001</p>
-                    <p>Email: info@hybridtransformers.com</p>
-                    <p>Phone: +1-800-555-HYBRID</p>
+                    <h4>Contact Us</h4>
+                    <p>123 Innovation Drive<br>Tech Park, CA 90210, USA</p>
+                    <p>Email: <a href="mailto:info@hybridtransformers.com">info@hybridtransformers.com</a></p>
+                    <p>Phone: <a href="tel:+18005550199">+1 (800) 555-0199</a></p>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect With Us</h4>
+                    <div class="social-media-links-footer">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <a href="privacy-policy.html" class="footer-privacy">Privacy Policy</a> | 
+                    <a href="terms-of-service.html" class="footer-terms">Terms of Service</a>
                 </div>
             </div>
         </div>
@@ -162,17 +284,25 @@
 
     <script src="js/main.js"></script>
     <script>
-        // Basic form submission feedback
+        // Basic form submission handling (preventDefault and show status)
         const contactForm = document.getElementById('contactForm');
-        const formFeedback = document.getElementById('formFeedback');
-        if(contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
+        const formStatus = document.getElementById('form-status');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault();
                 // In a real application, you would send this data to a server.
-                // For this template, we'll just show a success message.
-                formFeedback.innerHTML = '<p style="color: green;">Thank you for your message! We will get back to you shortly.</p>';
+                // For now, we'll just simulate a success message.
+                if (formStatus) { // Check if formStatus element exists
+                    formStatus.innerHTML = '<p style="color: green;">Thank you for your message! We will get back to you shortly.</p>';
+                }
                 contactForm.reset();
             });
+        }
+        // Set current year in footer
+        const currentYearElem = document.getElementById('currentYear');
+        if (currentYearElem) {
+            currentYearElem.textContent = new Date().getFullYear();
         }
     </script>
 </body>
