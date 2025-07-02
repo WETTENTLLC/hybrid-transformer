@@ -1,11 +1,13 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Updated font */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #e0e0e0; /* Light grey/off-white text */
-    background-color: #0a0f1e; /* Very dark blue/almost black background */
+    color: #e0e0e0;
+    background-color: #0a0f1e;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .container {
@@ -1581,6 +1583,81 @@ header nav ul li:nth-last-child(-n+2) .mega-menu { /* Target last two items, adj
     .about-tab-button {
         width: 100%;
         border-radius: 5px 5px 0 0;
+    }
+}
+
+/* Highlight Frames Section */
+.highlight-frames-section {
+    background: linear-gradient(90deg, #0a0f1e 60%, #1a233a 100%);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.highlight-frames-grid {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.highlight-frame {
+    background: #121a2f;
+    border: 3px solid var(--primary-accent);
+    border-radius: 14px;
+    box-shadow: 0 6px 24px rgba(0,255,255,0.08);
+    padding: 32px 28px 28px 28px;
+    max-width: 350px;
+    min-width: 260px;
+    flex: 1 1 300px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    margin-bottom: 20px;
+}
+.highlight-frame:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 12px 32px rgba(0,255,255,0.18);
+    border-color: var(--secondary-accent);
+}
+.highlight-frame h3 {
+    color: var(--primary-accent);
+    font-size: 1.35em;
+    margin-bottom: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.highlight-frame .highlight-icon {
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+.highlight-frame p {
+    color: #b0c4de;
+    font-size: 1.08em;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.demand-frame {
+    border-color: var(--primary-accent);
+    box-shadow: 0 0 0 4px rgba(0,123,255,0.08);
+}
+.earthquake-frame {
+    border-color: var(--secondary-accent);
+    box-shadow: 0 0 0 4px rgba(253,126,20,0.08);
+}
+.roi-frame {
+    border-color: var(--highlight-green);
+    box-shadow: 0 0 0 4px rgba(152,251,152,0.08);
+}
+@media (max-width: 900px) {
+    .highlight-frames-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .highlight-frame {
+        max-width: 100%;
+        min-width: 0;
     }
 }
 

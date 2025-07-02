@@ -78,9 +78,10 @@
             <div class="container product-grid">
                 <div class="product-image-gallery">
                     <div class="main-image-container">
-                        <img src="images/hybrid-main.png" alt="AMC Hybrid Transformer" id="mainProductImage" style="cursor: pointer;">
+                        <img src="images/amc-hybrid-transformer.png" alt="AMC Hybrid Transformer" id="mainProductImage" style="cursor: pointer;">
                     </div>
                     <div class="thumbnail-container">
+                        <img src="images/amc-hybrid-transformer.png" alt="AMC Hybrid Transformer" class="thumbnail-image" data-image="images/amc-hybrid-transformer.png">
                         <img src="images/icon-temperature.png" alt="Thermal Image" class="thumbnail-image" data-image="images/icon-temperature.png">
                         <img src="images/icon-harmonics.png" alt="Harmonic Waveform" class="thumbnail-image" data-image="images/icon-harmonics.png">
                         <img src="images/seismic-diagram.png" alt="Seismic Diagram" class="thumbnail-image" data-image="images/seismic-diagram.png">
@@ -226,11 +227,21 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Image gallery
+            const thumbnails = document.querySelectorAll('.thumbnail-image');
             const mainImage = document.getElementById('mainProductImage');
             const modal = document.getElementById('imageModal');
             const modalImg = document.getElementById('modalImage');
             const captionText = document.getElementById('caption');
             const closeModal = document.querySelector('.close-modal-btn');
+
+            // Thumbnail click functionality
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', function() {
+                    const newImageSrc = this.getAttribute('data-image');
+                    mainImage.src = newImageSrc;
+                    mainImage.alt = this.alt;
+                });
+            });
 
             function openModal(imgElement) {
                 if (modal && modalImg && captionText) {
