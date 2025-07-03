@@ -87,6 +87,16 @@ header.site-header nav ul li a:hover { /* More specific selector */
     color: var(--primary-accent);
 }
 
+/* Make all links orange by default across the site */
+a, a:visited, a:active, a:focus {
+    color: var(--secondary-accent) !important;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #ffa94d !important; /* lighter orange on hover */
+}
+
 /* Mega Menu */
 .mega-menu {
     display: none;
