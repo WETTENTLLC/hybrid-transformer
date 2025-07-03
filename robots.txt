@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+
+# High-priority pages for crawling
+Allow: /index.html
+Allow: /product-hybrid.html
+Allow: /about-story-mission.html
+Allow: /contact.html
+
+# Block private dashboard
+Disallow: /seo-dashboard-private-a7b9c2d1.html
+
+# Allow important resources
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Sitemap location
+Sitemap: https://hybridxfmr.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Specific instructions for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
