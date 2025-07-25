@@ -29,6 +29,8 @@ class EnterpriseSeOEngine {
             "description": "Leading provider of hybrid transformers that pay for themselves in 42 months through energy savings and harmonic filtering elimination.",
             "address": {
                 "@type": "PostalAddress",
+                "postOfficeBoxNumber": "1809",
+                "addressLocality": "Arizona",
                 "addressCountry": "US"
             },
             "contactPoint": {
