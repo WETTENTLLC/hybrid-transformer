@@ -1,4 +1,4 @@
-/* Feature Sections Styling */
+/* Feature Sections */
 .feature-section {
     padding: 60px 0;
 }
@@ -169,11 +169,6 @@
     font-size: 3em;
     margin: 0;
     font-weight: 700;
-}
-
-/* Inner Page Content */
-.inner-page-content {
-    background: var(--dark-bg);
 }
 
 /* Responsive Design */

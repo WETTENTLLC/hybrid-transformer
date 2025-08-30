@@ -1,0 +1,41 @@
+DEPLOYMENT INSTRUCTIONS FOR DOCUMENTS TAB UPDATE
+================================================
+
+FILES TO UPLOAD TO YOUR LIVE SERVER:
+
+1. UPDATED FILE:
+   - index.html (contains new Documents tab in navigation)
+
+2. NEW FOLDER AND FILE:
+   - Create folder: documents/
+   - Upload file: documents/RFQ_Sheet_Enertech.xlsx
+
+DEPLOYMENT METHODS:
+
+METHOD 1 - FTP/SFTP (FileZilla, WinSCP, etc.):
+1. Connect to your hosting server using FTP credentials
+2. Upload index.html to root directory (overwrite existing)
+3. Create "documents" folder in root directory
+4. Upload RFQ_Sheet_Enertech.xlsx to documents folder
+
+METHOD 2 - Hosting Control Panel (cPanel, etc.):
+1. Log into your hosting control panel
+2. Open File Manager
+3. Upload index.html to public_html/ (overwrite existing)
+4. Create "documents" folder in public_html/
+5. Upload RFQ_Sheet_Enertech.xlsx to documents folder
+
+METHOD 3 - Git Deployment (if using version control):
+1. git add .
+2. git commit -m "Add Documents tab with RFQ sheet download"
+3. git push origin main
+
+VERIFICATION:
+After upload, visit your site and verify:
+- Documents tab appears in navigation
+- Clicking Documents tab downloads the RFQ sheet
+- All other pages remain intact
+
+IMPORTANT: Only these 2 items need to be uploaded:
+- index.html (updated)
+- documents/RFQ_Sheet_Enertech.xlsx (new)
